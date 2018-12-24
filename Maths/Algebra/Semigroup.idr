@@ -11,7 +11,7 @@ import Maths.Algebra.Magma
 
 class Magma a => Semigroup a where {}
 
-magmaOpIsAssociative : Magma a => (x,y,z : a) -> x `op` (y `op` z) = (x `op` y) <+> z
+magmaOpIsAssociative : Magma a => (x,y,z : a) -> x `op` (y `op` z) = (x `op` y) `op` z
 
 
 -- We might want special classes of semigroups, and types of semigroup
